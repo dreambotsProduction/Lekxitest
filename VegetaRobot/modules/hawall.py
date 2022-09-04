@@ -22,16 +22,16 @@ async def wish(_, m):
             wish += f"✨ ~~ **Possible to: {wish_count}%** ~~"
             await m.reply_animation(url,caption=(wish),
               reply_markup=InlineKeyboardMarkup(
-                    [ [InlineKeyboardButton("❓ What is This", url="https://t.me/vegetaUpdates/175")]]))
+                    [ [InlineKeyboardButton("❔ What is This", url="https://t.me/StrawHatNetwork/50")]]))
             
          
-BUTTON = [[Button.url("❓ What Is This", "https://t.me/vegetaUpdates/173")]]
+BUTTON = [[Button.url("❔ What Is This", "https://t.me/StrawHatNetwork/44")]]
 HOT = "https://telegra.ph/file/daad931db960ea40c0fca.gif"
-SMEXY = "https://telegra.ph/file/a23e9fd851fb6bc771686.gif"
-LEZBIAN = "https://telegra.ph/file/5609b87f0bd461fc36acb.gif"
+SMEXY = "https://c.tenor.com/XofRuAsQH7EAAAAC/anime-sexy.gif"
+LEZBIAN = "https://pa1.narvii.com/5853/e40f2e8c88da7d0cf3f33f492aa445bab598c4a5_hq.gif"
 BIGBALL = "https://i.gifer.com/8ZUg.gif"
 LANG = "https://telegra.ph/file/423414459345bf18310f5.gif"
-CUTIE = "https://64.media.tumblr.com/d701f53eb5681e87a957a547980371d2/tumblr_nbjmdrQyje1qa94xto1_500.gif"
+CUTIE = "https://data.whicdn.com/images/328417923/original.gif"
 
 @asst.on(events.NewMessage(pattern="/horny ?(.*)"))
 async def horny(e):
@@ -148,7 +148,7 @@ You having any kind of
 Example:
 ➢ /wish I want class topper 😌
 ➢ /wish I want a new iphone 😜
-❓ What is This (howall):
+❔ What is This (howall):
 In this Howell show you possibltly!
 horny:gay:lezbian:boobs:cock:cute
 Example:
