@@ -81,43 +81,49 @@ def get_readable_time(seconds: int) -> str:
     return ping_time
 
 
-PM_START_TEXT = """ ┗►  *What's Up Yoo! * ◄┛
-
-~~ *I'm made with Saiyans blood* ~~
-
-~ *Wanna see my commands*[❗]({})
-*below click the help button!* ~
-
-──『*ᴛʜᴀɴᴋs  ғᴏʀ  ᴜsɪɴɢ*』
+PM_START_TEXT = """ ──────「 Yor Forger 🌺 (https://telegra.ph/file/f09abdbeba399891b45dc.jpg)」────
+×× It's Yor, truly Yours 🌝! I'm an anime themed group management bot with a lot of advanced features! ××
+➖➖➖➖➖➖➖➖➖➖
+×× Try The Help & Command Buttons Below To Know My Abilities ××
+➖➖➖➖➖➖➖➖➖➖
+──『 *ᴛʜᴀɴᴋs  ғᴏʀ  ᴜsɪɴɢ* 』──
 """ 
 
 buttons = [
     [
         InlineKeyboardButton(
-                            text="☑ Add Vegeta To Groups ☑",
+                            text="➕ Add Me To Your Groups ➕",
                             url=f"t.me/{BOT_USERNAME}?startgroup=true"),
                     ],
                      [
-                       InlineKeyboardButton(text="SUPPORT", url=f"https://t.me/{SUPPORT_CHAT}"),
-                       InlineKeyboardButton(text="UPDATES",  url=f"https://t.me/{UPDATES_CHANNEL}"),
+                       InlineKeyboardButton(text="🔔 Updates", url=f"https://t.me/{SUPPORT_CHAT}"),
+                       InlineKeyboardButton(text="🚑 Support",  url=f"https://t.me/{UPDATES_CHANNEL}"),
                     ],
                    [
-                       InlineKeyboardButton(text="NETWORK", url=f"https://t.me/nandhabots"),
-                       InlineKeyboardButton(text="LOGS", url=f"https://t.me/vegetalogs"),
-                ],[ InlineKeyboardButton(text="COMMANDS HELP", callback_data="help_back"
+                       InlineKeyboardButton(text="👑 Owner", url=f"https://t.me/SAlTAM4"),
+                       InlineKeyboardButton(text="💠 Network", url=f"https://t.me/StrawHatNetwork"),
+                ],[ InlineKeyboardButton(text="COMMAND HELP", callback_data="help_back"
          ),
     ],
 ] 
 
-HELP_STRINGS = """ *Hello There! Here you can get all of the help commands!
-- /donate - Steps to Donate Bot Owner 
-- /help (modulename): you also get the about the module.
-- /settings - in this work group only chat!
-Below Click the module you know about module commands!*
+HELP_STRINGS = """
+Hello There! My name is **Yor Forger.**
+
+Here you can get all of the Help Commands!
+ • /help: PM's you this message.
+ • /help <module name>: PM's you info about that module.
+ • /donate: information on how to donate!
+ • /settings:
+ • in PM: will send you your settings for all supported modules.
+ • in a group: will redirect you to pm, with all that chat's settings.
+ 
+All commands can either be used with / or !.
+And the following:
 """
 
 HELP_MSG = "Click the button below to get help manu in your pm."
-DONATE_STRING = """*don't need donate I'm free for everyone add your group's in @VegetaRobot this is my donate🙂*"""
+DONATE_STRING = """*don't need donate I'm free for everyone add your group's in @YorForgerRobot this is my donate🙂*"""
 HELP_IMG= "https://telegra.ph/file/9d2c6e3b28afe7619856e.jpg"
 GROUPSTART_IMG= "https://telegra.ph/file/1cbafa58dda18528f9e0c.mp4"
 
