@@ -94,7 +94,7 @@ Example:
  `/cash 1 usd inr`
 Output: `1.0 USD = 75.505 INR`
 
-Reports bugs at @VegetaSupport
+Reports bugs at @StrawHatTeam
 """
 
 ECHO_HANDLER = DisableAbleCommandHandler("echo", echo, filters=Filters.group,run_async=True)
