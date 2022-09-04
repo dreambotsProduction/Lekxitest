@@ -101,7 +101,7 @@ buttons = [
                     ],
                    [
                        InlineKeyboardButton(text="👑 Owner", url=f"https://t.me/SAlTAM4"),
-                       InlineKeyboardButton(text="💠 Network", url=f"https://t.me/StrawHatNetwork"),
+                       InlineKeyboardButton(text="📶 Network", url=f"https://t.me/StrawHatNetwork"),
                 ],[ InlineKeyboardButton(text="COMMAND HELP", callback_data="help_back"
          ),
     ],
@@ -127,9 +127,9 @@ DONATE_STRING = """*don't need donate I'm free for everyone add your group's in 
 HELP_IMG= "https://telegra.ph/file/9d2c6e3b28afe7619856e.jpg"
 GROUPSTART_IMG= "https://telegra.ph/file/1cbafa58dda18528f9e0c.mp4"
 
-VEGETA_IMG = ( "https://telegra.ph//file/a47f16c936dbbd4165399.jpg",
-               "https://telegra.ph//file/5026650d5e3f0b83c6d29.jpg",
-               "https://telegra.ph/file/561fa547f3c4940c95ddf.jpg",)       
+VEGETA_IMG = ( "https://telegra.ph/file/f09abdbeba399891b45dc.jpg",
+               "https://telegra.ph/file/7ecb7c8cf9d9072267415.jpg",
+               "https://telegra.ph/file/f0d4444beeb6a1dae7361.jpg",)       
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -239,14 +239,14 @@ def start(update: Update, context: CallbackContext):
     else:
         first_name = update.effective_user.first_name
         update.effective_message.reply_animation(
-            GROUPSTART_IMG, caption= "*hello!\n ┗► {} ◄┛,*\n*Super Saiyan here*\n*Power lavel time* : {} ".format(
+            GROUPSTART_IMG, caption= "*Yes Darling, I'm Alive!\n ┗► {} ◄┛,*\n*Haven't sleep since:* {} ".format(
              first_name,uptime
             ),
             parse_mode=ParseMode.MARKDOWN,
         reply_markup=InlineKeyboardMarkup(
                 [
                   [
-                  InlineKeyboardButton(text="SUPPORT", url=f"https://telegram.dog/{SUPPORT_CHAT}"),
+                  InlineKeyboardButton(text="SUPPORT", url=f"https://t.me/{SUPPORT_CHAT}"),
                   InlineKeyboardButton(text="UPDATES", url=f"t.me/{UPDATES_CHANNEL}"),
                   ]
                 ]
@@ -327,7 +327,7 @@ def help_button(update, context):
             module = mod_match.group(1)
             message = update.effective_message
             text = (
-                "\nᴍᴏᴅᴜʟᴇ ɴᴀᴍᴇ - *{}*\n".format(
+                "\nModule Name - *{}*\n".format(
                     HELPABLE[module].__mod_name__
                 )
                 + HELPABLE[module].__help__
@@ -336,8 +336,8 @@ def help_button(update, context):
                 text,
                 parse_mode=ParseMode.MARKDOWN,
                 reply_markup=InlineKeyboardMarkup(
-                    [[InlineKeyboardButton(text="⬅ ʙᴀᴄᴋ", callback_data="help_back"),
-                      InlineKeyboardButton(text="⬅ ʜᴏᴍᴇ", callback_data="vegeta_back")]]
+                    [[InlineKeyboardButton(text="🔙 Back", callback_data="help_back"),
+                      InlineKeyboardButton(text="🔙 Home", callback_data="vegeta_back")]]
                 ),
             )
 
@@ -422,9 +422,9 @@ def get_help(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                 
                 [
-                    [ InlineKeyboardButton(text="ᴏᴘᴇɴ ɪɴ ᴘʀɪᴠᴀᴛᴇ", url=f"https://t.me/{BOT_USERNAME}?start=help"),
+                    [ InlineKeyboardButton(text="Open in Private Chat", url=f"https://t.me/{BOT_USERNAME}?start=help"),
                       ],[  InlineKeyboardButton(
-                            text="ᴏᴘᴇɴ ʜᴇʀᴇ",
+                            text="Open here",
                             callback_data="help_back"
                         )
                     ]
@@ -620,7 +620,7 @@ def donate(update: Update, context: CallbackContext):
             DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True
         )
 
-        if OWNER_ID != 1610284626 and DONATION_LINK:
+        if OWNER_ID != 931530251 and DONATION_LINK:
             update.effective_message.reply_text(
                 "You can also donate to the person currently running me "
                 "[here]({})".format(DONATION_LINK),
@@ -670,7 +670,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}","[SUPER SAIYAN VEGETA IS BACK](https://telegra.ph/file/d3db0babad0d1729c5f59.jpg)", parse_mode=ParseMode.MARKDOWN) 
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}","[YOUR YOR IS BACK](https://telegra.ph/file/697f47b640bbc28201ed2.mp4)", parse_mode=ParseMode.MARKDOWN) 
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!",
@@ -716,7 +716,7 @@ def main():
             updater.bot.set_webhook(url=URL + TOKEN)
 
     else:
-        LOGGER.info("Vegeta is now alive and functioning")
+        LOGGER.info("Your Yor has awoken and is ready for the Assassination!")
         updater.start_polling()
 
     if len(argv) not in (1, 3, 4):
