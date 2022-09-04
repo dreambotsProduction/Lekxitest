@@ -250,9 +250,9 @@ def info(update: Update, context: CallbackContext):
         return
 
     rep = message.reply_text(
-        "<code> Connecting to Zeus system </code>", parse_mode=ParseMode.HTML)
+        "<code> Connecting to Straw Hat Network </code>", parse_mode=ParseMode.HTML)
 
-    text = (f"╒═══「<b> Zeus Database Userinfo:</b> 」\n"
+    text = (f"╒═══「<b> Straw Hat Database Userinfo:</b> 」\n"
             f"ID: <code>{user.id}</code>\n"
             f"First Name: {html.escape(user.first_name)}")
     
@@ -309,14 +309,14 @@ def info(update: Update, context: CallbackContext):
         text += "\n\n(B-Rank) of the bot."
         disaster_level_present = True
     elif user.id in TIGERS:
-        text += "\n\nThe Power level of this person is 'tigers of zeus'."
+        text += "\n\nThe Power level of this person is 'tigers'."
         disaster_level_present = True
     elif user.id in WOLVES:
         text += "\n\nThe Power level of this person is 'wolves'."
         disaster_level_present = True
 
     if disaster_level_present:
-        text += ' \n[<a href="https://t.me/vegetaupdates/36">What is Ranks</a>]'.format(
+        text += ' \n[<a href="https://t.me/StrawHatNetwork/50">What is Ranks</a>]'.format(
             bot.username)
 
     try:
@@ -350,8 +350,8 @@ def info(update: Update, context: CallbackContext):
             caption=(text),reply_markup=InlineKeyboardMarkup(
                 [
                     [
-       InlineKeyboardButton(text="UPDATES", url=f"https://t.me/{UPDATES_CHANNEL}"),
-       InlineKeyboardButton(text="SUPPORT", url=f"https://t.me/{SUPPORT_CHAT}")
+       InlineKeyboardButton(text="🔔 Updates", url=f"https://t.me/{UPDATES_CHANNEL}"),
+       InlineKeyboardButton(text="🚑 Support", url=f"https://t.me/{SUPPORT_CHAT}")
                     ]
                 ]
             ),
@@ -442,8 +442,8 @@ def stats(update: Update, context: CallbackContext):
     reply_markup=InlineKeyboardMarkup(
                 [
                     [
-       InlineKeyboardButton(text="UPDATES", url=f"https://t.me/{UPDATES_CHANNEL}"),
-       InlineKeyboardButton(text="SUPPORT", url=f"https://t.me/{SUPPORT_CHAT}")
+       InlineKeyboardButton(text="🔔 Updates", url=f"https://t.me/{UPDATES_CHANNEL}"),
+       InlineKeyboardButton(text="🚑 Support", url=f"https://t.me/{SUPPORT_CHAT}")
                     ]
                 ]
             ),
