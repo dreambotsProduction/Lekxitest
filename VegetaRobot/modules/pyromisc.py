@@ -151,7 +151,7 @@ async def share_text(_, message: Message):
                 [
                     [
                         InlineKeyboardButton(
-                            "Support Chat", url=f"https://t.me/vegetasupport")
+                            "Support Chat", url=f"https://t.me/StrawHatTeam")
                     ]                
                 ]
             ),
