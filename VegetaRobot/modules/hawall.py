@@ -1,4 +1,3 @@
-
 import random, requests, time
 from VegetaRobot import telethn as asst, pgram as bot
 from telethon import Button, events
@@ -22,7 +21,7 @@ async def wish(_, m):
             wish += f"✨ ~~ **Possible to: {wish_count}%** ~~"
             await m.reply_animation(url,caption=(wish),
               reply_markup=InlineKeyboardMarkup(
-                    [ [InlineKeyboardButton("❔ What is This", url="https://t.me/StrawHatNetwork/50")]]))
+                    [ [InlineKeyboardButton("❔ What is This", url="https://t.me/StrawHatNetwork/53")]]))
             
          
 BUTTON = [[Button.url("❔ What Is This", "https://t.me/StrawHatNetwork/44")]]
