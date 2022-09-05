@@ -81,7 +81,7 @@ def get_readable_time(seconds: int) -> str:
     return ping_time
 
 
-PM_START_TEXT = """ ──────「 Yor Forger 🌺 (https://telegra.ph/file/f09abdbeba399891b45dc.jpg)」────
+PM_START_TEXT = """ ──────「 Yor Forger [🌺](https://telegra.ph/file/f09abdbeba399891b45dc.jpg)」────
 ×× It's Yor, truly Yours 🌝! I'm an anime themed group management bot with a lot of advanced features! ××
 ➖➖➖➖➖➖➖➖➖➖
 ×× Try The Help & Command Buttons Below To Know My Abilities ××
@@ -96,8 +96,8 @@ buttons = [
                             url=f"t.me/{BOT_USERNAME}?startgroup=true"),
                     ],
                      [
-                       InlineKeyboardButton(text="🔔 Updates", url=f"https://t.me/{SUPPORT_CHAT}"),
-                       InlineKeyboardButton(text="🚑 Support",  url=f"https://t.me/{UPDATES_CHANNEL}"),
+                       InlineKeyboardButton(text="🔔 Updates", url=f"https://t.me/{UPDATES_CHANNEL}"),
+                       InlineKeyboardButton(text="🚑 Support",  url=f"https://t.me/{SUPPORT_CHAT}"),
                     ],
                    [
                        InlineKeyboardButton(text="👑 Owner", url=f"https://t.me/SAlTAM4"),
