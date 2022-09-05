@@ -149,7 +149,7 @@ Example:
 ❍ /wish I want a new iphone 😜
 
 ❔ What is This (howall):
-In this Howell show you possibltly!
+In this Howell show you possibility!
 Example:
 ❍ /horny: reply to someone or it self show how horny!
 ❍ /cute: reply to someone or it self show how cute!
