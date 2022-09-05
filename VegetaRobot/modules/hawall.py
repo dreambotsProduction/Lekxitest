@@ -21,10 +21,10 @@ async def wish(_, m):
             wish += f"✨ ~~ **Possible to: {wish_count}%** ~~"
             await m.reply_animation(url,caption=(wish),
               reply_markup=InlineKeyboardMarkup(
-                    [ [InlineKeyboardButton("❔ What is This", url="https://t.me/StrawHatNetwork/53")]]))
+                    [ [InlineKeyboardButton("❔ What is This", url="https://t.me/StrawHatUpdates/14")]]))
             
          
-BUTTON = [[Button.url("❔ What Is This", "https://t.me/StrawHatNetwork/44")]]
+BUTTON = [[Button.url("❔ What Is This", "https://t.me/StrawHatUpdates/11")]]
 HOT = "https://c.tenor.com/XofRuAsQH7EAAAAC/anime-sexy.gif"
 SMEXY = "https://telegra.ph/file/3b07b0891fe71e3fb3f3d.mp4"
 LEZBIAN = "https://pa1.narvii.com/5853/e40f2e8c88da7d0cf3f33f492aa445bab598c4a5_hq.gif"
