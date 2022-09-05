@@ -102,7 +102,7 @@ buttons = [
                    [
                        InlineKeyboardButton(text="👑 Owner", url=f"https://t.me/SAlTAM4"),
                        InlineKeyboardButton(text="📶 Network", url=f"https://t.me/StrawHatNetwork"),
-                ],[ InlineKeyboardButton(text="COMMAND HELP", callback_data="help_back"
+                ],[ InlineKeyboardButton(text="⚙️ Command Help", callback_data="help_back"
          ),
     ],
 ] 
@@ -128,8 +128,7 @@ HELP_IMG= "https://telegra.ph/file/9d2c6e3b28afe7619856e.jpg"
 GROUPSTART_IMG= "https://telegra.ph/file/1cbafa58dda18528f9e0c.mp4"
 
 VEGETA_IMG = ( "https://telegra.ph/file/f09abdbeba399891b45dc.jpg",
-               "https://telegra.ph/file/7ecb7c8cf9d9072267415.jpg",
-               "https://telegra.ph/file/f0d4444beeb6a1dae7361.jpg",)       
+               "https://telegra.ph/file/7ecb7c8cf9d9072267415.jpg",)       
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -213,7 +212,7 @@ def start(update: Update, context: CallbackContext):
                     update.effective_chat.id,
                     HELPABLE[mod].__help__,
                     InlineKeyboardMarkup(
-                        [[InlineKeyboardButton(text="⬅Back", callback_data="help_back")]]
+                        [[InlineKeyboardButton(text="🔙 Back", callback_data="help_back")]]
                     ),
                 )
 
@@ -239,15 +238,15 @@ def start(update: Update, context: CallbackContext):
     else:
         first_name = update.effective_user.first_name
         update.effective_message.reply_animation(
-            GROUPSTART_IMG, caption= "*Yes Darling, I'm Alive!\n ┗► {} ◄┛,*\n*Haven't sleep since:* {} ".format(
+            GROUPSTART_IMG, caption= "*Yes Darling {}, I'm Alive!*\n*Haven't sleep since:* {} ".format(
              first_name,uptime
             ),
             parse_mode=ParseMode.MARKDOWN,
         reply_markup=InlineKeyboardMarkup(
                 [
                   [
-                  InlineKeyboardButton(text="SUPPORT", url=f"https://t.me/{SUPPORT_CHAT}"),
-                  InlineKeyboardButton(text="UPDATES", url=f"t.me/{UPDATES_CHANNEL}"),
+                  InlineKeyboardButton(text="📶 Network", url=f"https://t.me/StrawHatNetwork"),
+                  InlineKeyboardButton(text="🔔 Updates", url=f"t.me/{UPDATES_CHANNEL}"),
                   ]
                 ]
             ),
@@ -445,7 +444,7 @@ def get_help(update: Update, context: CallbackContext):
             chat.id,
             text,
             InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Back", callback_data="help_back")]]
+                [[InlineKeyboardButton(text="🔙 Back", callback_data="help_back")]]
             ),
         )
 
@@ -518,7 +517,7 @@ def settings_button(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                text="Back",
+                                text="🔙 Back",
                                 callback_data="stngs_back({})".format(chat_id),
                             )
                         ]
