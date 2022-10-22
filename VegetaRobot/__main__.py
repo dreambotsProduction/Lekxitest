@@ -81,8 +81,8 @@ def get_readable_time(seconds: int) -> str:
     return ping_time
 
 
-PM_START_TEXT = """ ──────「 Yor Forger [🌺](https://telegra.ph/file/f09abdbeba399891b45dc.jpg)」────
-×× It's Yor, truly Yours 🌝! I'm an anime themed group management bot with a lot of advanced features! ××
+PM_START_TEXT = """ ──────「  ʟᴇᴋxɪ ᵇᵉᵗᵃ [🌺](https://te.legra.ph/file/59359aff3f2096aa63427.jpg)」────
+×× It's ʟᴇᴋxɪ ᵇᵉᵗᵃ, truly Yours 🌝! I'm an anime themed group management bot with a lot of advanced features! ××
 ➖➖➖➖➖➖➖➖➖➖
 ×× Try The Help & Command Buttons Below To Know My Abilities ××
 ➖➖➖➖➖➖➖➖➖➖
@@ -100,15 +100,15 @@ buttons = [
                        InlineKeyboardButton(text="🚑 Support",  url=f"https://t.me/{SUPPORT_CHAT}"),
                     ],
                    [
-                       InlineKeyboardButton(text="👑 Owner", url=f"https://t.me/SAlTAM4"),
-                       InlineKeyboardButton(text="📶 Network", url=f"https://t.me/StrawHatNetwork"),
+                       InlineKeyboardButton(text="👑 Owner", url=f"https://t.me/XoX_dream"),
+                       InlineKeyboardButton(text="join🙈", url=f"https://t.me/Kerala_friendship"),
                 ],[ InlineKeyboardButton(text="⚙️ Command Help", callback_data="help_back"
          ),
     ],
 ] 
 
 HELP_STRINGS = """
-Hello There! My name is **Yor Forger.**
+Hello There! My name is **ʟᴇᴋxɪ ᵇᵉᵗᵃ.**
 
 Here you can get all of the Help Commands!
  • /help: PM's you this message.
@@ -123,12 +123,12 @@ And the following:
 """
 
 HELP_MSG = "Click the button below to get help manu in your pm."
-DONATE_STRING = """*don't need donate I'm free for everyone add your group's in @YorForgerRobot this is my donate🙂*"""
-HELP_IMG= "https://telegra.ph/file/9d2c6e3b28afe7619856e.jpg"
-GROUPSTART_IMG= "https://telegra.ph/file/1cbafa58dda18528f9e0c.mp4"
+DONATE_STRING = """*don't need donate I'm free for everyone add your group's in @lekxibot this is my donate🙂*"""
+HELP_IMG= "https://te.legra.ph/file/59359aff3f2096aa63427.jpg"
+GROUPSTART_IMG= "https://te.legra.ph/file/59359aff3f2096aa63427.jpg"
 
-VEGETA_IMG = ( "https://telegra.ph/file/f09abdbeba399891b45dc.jpg",
-               "https://telegra.ph/file/7ecb7c8cf9d9072267415.jpg",)       
+VEGETA_IMG = ( "https://te.legra.ph/file/59359aff3f2096aa63427.jpg",
+               "https://te.legra.ph/file/59359aff3f2096aa63427.jpg",)       
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -245,7 +245,7 @@ def start(update: Update, context: CallbackContext):
         reply_markup=InlineKeyboardMarkup(
                 [
                   [
-                  InlineKeyboardButton(text="📶 Network", url=f"https://t.me/StrawHatNetwork"),
+                  InlineKeyboardButton(text="join🙈", url=f"https://t.me/kerala_friendship"),
                   InlineKeyboardButton(text="🔔 Updates", url=f"t.me/{UPDATES_CHANNEL}"),
                   ]
                 ]
